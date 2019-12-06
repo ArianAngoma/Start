@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Views.Activity.RegistroActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/layoutPicture"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_centerInParent="true"
+                android:id="@+id/imagen_lugar"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:src="@drawable/computer" />
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fabChoosePic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                app:srcCompat="@drawable/student"
+                app:fabSize="mini"/>
+        </RelativeLayout>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/layoutlongitud"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/layoutPicture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="@dimen/cardview_default_elevation"
+            app:cardCornerRadius="0dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="16dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/longitud"
+                        android:hint="Longitud"
+                        android:fontFamily="sans-serif-light"
+                        android:inputType="textPersonName|textCapWords"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/latitud"
+                        android:hint="Latitud"
+                        android:fontFamily="sans-serif-light"
+                        android:inputType="textPersonName|textCapWords"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/nombre_lugar"
+                        android:hint="Lugar"
+                        android:fontFamily="sans-serif-light"
+                        android:inputType="textPersonName|textCapWords"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/descripcion_lugar"
+                        android:hint="Descripción"
+                        android:fontFamily="sans-serif-light"
+                        android:inputType="textPersonName|textCapWords"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/servicios"
+                        android:hint="Servicios"
+                        android:fontFamily="sans-serif-light"
+                        android:inputType="textPersonName|textCapWords"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/precioMensual"
+                        android:hint="Precio"
+                        android:fontFamily="sans-serif-light"
+                        android:inputType="textPersonName|textCapWords"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/tamano"
+                        android:hint="Tamaño"
+                        android:fontFamily="sans-serif-light"
+                        android:inputType="textPersonName|textCapWords"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/contactoArrendador"
+                        android:hint="Contacto"
+                        android:fontFamily="sans-serif-light"
+                        android:inputType="textPersonName|textCapWords"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/nroCuartos"
+                        android:hint="Cuartos"
+                        android:fontFamily="sans-serif-light"
+                        android:inputType="textPersonName|textCapWords"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/nroBanios"
+                        android:hint="Baños"
+                        android:fontFamily="sans-serif-light"
+                        android:inputType="textPersonName|textCapWords"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </android.support.design.widget.TextInputLayout>
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_habitacion"
+            android:icon="@drawable/ic_cursos"
+            android:title="Habitaciones" />
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_cursos"
+            android:title="Cursos" />
+        <item
+            android:id="@+id/nav_categorias"
+            android:icon="@drawable/ic_categorias"
+            android:title="Categorías" />
+        <item
+            android:id="@+id/nav_profesores"
+            android:icon="@drawable/ic_profesores"
+            android:title="Profesores" />
+        <item
+            android:id="@+id/nav_usuario"
+            android:icon="@drawable/ic_usuario"
+            android:title="Mi usuario" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Compartir" />
+            <item
+                android:id="@+id/cerrar_sesion"
+                android:icon="@drawable/ic_cerrar_sesion"
+                android:title="Cerrar sesión" />
+        </menu>
+    </item>
+
+</menu>
